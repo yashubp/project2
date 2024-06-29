@@ -1,0 +1,15 @@
+def counter(words):
+    '''function to count the number words in given text'''
+    '''input is getting from main function'''
+    '''this function returns the  word count in integer'''
+    word_split=words.split()
+    return len(word_split)
+"___name__"=="__main__"
+'''IT TAKES THE INPUT SEND THE TEXT TO COUNT WORDS TO COUNTER FUNCTION'''
+print("Welcome to the word counter!\nprovide the input to the counter in a single line instead of giving paragraph ")
+user_input=input("Provide the words to count below:")
+if not  user_input:
+    print("ERROR! input is not provided \n please provide the input")
+else:
+    result=counter(user_input)
+    print(f"number of words in this text will be = {result}")
